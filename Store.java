@@ -4,7 +4,6 @@ public class Store {
   //fields
   protected String name;
   protected String owner;
-  protected String location;
   protected ArrayList<Product> products;
 
   //constructor
@@ -23,10 +22,6 @@ public class Store {
     this.owner = newOwner;
   }
 
-  public void setLocation(String newLocation) {
-    this.location = newLocation;
-  }
-
   public void addProduct(Product p) {
     products.add(p)
   }
@@ -38,9 +33,5 @@ public class Store {
 
   public String getOwner() {
     return owner;
-  }
-
-  public String getLocation() {
-    return location;
   }
 }
