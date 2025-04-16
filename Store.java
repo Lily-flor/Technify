@@ -5,14 +5,13 @@ public class Store {
   protected String name;
   protected String owner;
   protected String location;
-  protected Product product;
+  protected ArrayList<Product> products;
 
   //constructor
-  public Store(String name, String owner, String location) {
+  public Store(String name, String owner) {
     this.name = name;
     this.owner = owner;
-    this.location = location;
-    ArrayList<Product> list = new ArrayList<>();
+    products = new ArrayList<Product>();
   }
   //instance methods
   //basic setters
@@ -26,6 +25,10 @@ public class Store {
 
   public void setLocation(String newLocation) {
     this.location = newLocation;
+  }
+
+  public void addProduct(Product p) {
+    products.add(p)
   }
 
   //basic getters
